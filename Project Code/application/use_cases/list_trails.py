@@ -1,4 +1,5 @@
-# Suggested path: hiking_buddy/application/use_cases/list_trails.py
+# hiking_buddy/application/use_cases/list_trails.py
+
 
 class ListTrails:
     def __init__(self, trail_service):
