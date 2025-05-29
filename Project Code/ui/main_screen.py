@@ -37,7 +37,7 @@ class MainScreen(QWidget):
         profile_btn.setIcon(QIcon("assets/icons/profile_icon_small.png"))
         profile_btn.setIconSize(QPixmap("assets/icons/profile_icon_small.png").size())
         profile_btn.setFlat(True)
-        profile_btn.clicked.connect(lambda: print("Navigate to Profile"))
+        profile_btn.clicked.connect(lambda: self.navigator.navigate_to("profile"))
         header_layout.addWidget(profile_btn)
 
         search_icon = QLabel()
@@ -98,11 +98,9 @@ class MainScreen(QWidget):
         goal_row = QHBoxLayout()
         box = QLabel()
         box.setFixedSize(51, 50)
-        box.setStyleSheet("background-color: white; border: 2px solid #black;")
+        box.setStyleSheet("background-color: white; border: 2px solid black;")
         icon = QLabel()
-        icon.setPixmap(
-            QPixmap("assets/icons/Capture_9.png")
-        )
+        icon.setPixmap(QPixmap("assets/icons/Capture_9.png"))
         icon.setAlignment(Qt.AlignmentFlag.AlignCenter)
         icon_container = QVBoxLayout()
         icon_container.addStretch()
@@ -175,11 +173,11 @@ class MainScreen(QWidget):
         nav_layout = QHBoxLayout()
 
         icons = [
-            ("home", lambda: print("Home clicked")),
-            ("map", lambda: print("Map clicked")),
-            ("record", lambda: print("Record clicked")),
-            ("group", lambda: print("Group clicked")),
-            ("stats", lambda: print("Stats clicked")),
+            ("home", lambda: self.navigator.navigate_to("main")),
+            ("map", lambda: self.navigator.navigate_to("map")),
+            ("record", lambda: self.navigator.navigate_to("record")),
+            ("group", lambda: self.navigator.navigate_to("group")),
+            ("stats", lambda: self.navigator.navigate_to("stats")),
         ]
 
         for icon_name, callback in icons:
