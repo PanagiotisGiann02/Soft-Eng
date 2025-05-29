@@ -1,5 +1,5 @@
 # LoginScreen UI and logic integration
-# Suggested file path: hiking_buddy/ui/login_screen.py
+# hiking_buddy/ui/login_screen.py
 # Depends on: core/services/mock_auth_service.py
 
 from PyQt6.QtWidgets import (
