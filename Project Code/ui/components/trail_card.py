@@ -1,4 +1,4 @@
-# Suggested path: hiking_buddy/ui/components/trail_card.py
+# hiking_buddy/ui/components/trail_card.py
 
 from PyQt6.QtWidgets import (
     QWidget,
