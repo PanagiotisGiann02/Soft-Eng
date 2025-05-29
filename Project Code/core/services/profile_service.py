@@ -1,4 +1,5 @@
-# Suggested path: hiking_buddy/core/services/profile_service.py
+# hiking_buddy/core/services/profile_service.py
+
 
 class ProfileService:
     def get_profile_data(self):
