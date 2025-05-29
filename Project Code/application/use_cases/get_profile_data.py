@@ -1,4 +1,5 @@
-# Suggested path: hiking_buddy/application/use_cases/get_profile_data.py
+# hiking_buddy/application/use_cases/get_profile_data.py
+
 
 class GetProfileData:
     def __init__(self, profile_service):
